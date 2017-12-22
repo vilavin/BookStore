@@ -22,11 +22,14 @@
   
   <body>
   <h1>登录</h1>
-<p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/jsps/main.jsp'/>" method="post">
+<p style="color: red; font-weight: 900">${msg}</p>
+<form action="<c:url value='/user?method=login'/>" method="post">
 	用户名：<input type="text" name="username" value=""/><br/>
-	密　码：<input type="password" name="password"/><br/>
+	密　码：<input type="password" name="PASSWORD"/><br/>
 	<input type="submit" value="登录"/>
 </form>
+  <script type="text/javascript">
+
+  </script>
   </body>
 </html>

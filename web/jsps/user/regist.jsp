@@ -22,11 +22,11 @@
   
   <body>
   <h1>注册</h1>
-<p style="color: red; font-weight: 900">${msg }</p>
-<form action="javascript:alert('注册成功！');" method="post">
-	<input type="hidden" name="method" value="regist"/>
+<p style="color: red; font-weight: 900">${msg}</p>
+<form action="<c:url value='/user'/>" method="post">
+	<input type="hidden" name="method" value="register"/>
 	用户名：<input type="text" name="username" value=""/><br/>
-	密　码：<input type="password" name="password"/><br/>
+	密　码：<input type="password" name="PASSWORD"/><br/>
 	邮　箱：<input type="text" name="email" value=""/><br/>
 	<input type="submit" value="注册"/>
 </form>
